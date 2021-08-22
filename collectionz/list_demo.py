@@ -15,6 +15,7 @@ print("days + weekends :", weekdays.__add__(weekends))
 day_indices = [1, 2, 3, 4, 5, 6, 7]
 zipped = zip(days, day_indices)
 print("zip days and day indices: ", list(zipped))
+print("zip days and day indices: ", zipped)
 
 print("weekdays head = ", weekdays[0])
 print("weekdays tail = ", weekdays[-1])
@@ -47,8 +48,8 @@ print(squares)              # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
 print("################################### num List ###############################################")
 my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-# index   0  1  2  3  4  5  6  7  8
-#        -9 -8 -7 -6 -5 -4 -3 -2 -1
+# index    0  1  2  3  4  5  6  7  8
+#         -9 -8 -7 -6 -5 -4 -3 -2 -1
 
 # List Slicing
 print('Original List:', my_list)
@@ -77,6 +78,8 @@ print('Sorted list: ', new_list)
 print('Popped Element:', my_list.pop())
 
 # To remove a particular element from the lsit BY NAME
+#print(my_list)
+#my_list.append(6)
 my_list.remove(6)
 print('After removing \'6\':', my_list)
 
@@ -86,7 +89,7 @@ print('Inserting \'6\' at 5th index:', my_list)
 
 # To count number of occurences of a element in the list
 print('No of Occurences of \'1\':', my_list.count(1))
-
+# Assignment - [1, 2, 3, 3, 4, 4, 4] -> [(1, 1), (2, 1), (3, 2), (4, 3)]
 # To extend a list that is insert multiple elements at once at the end of the list
 my_list.extend([10, 11])
 print('Extended list:', my_list)

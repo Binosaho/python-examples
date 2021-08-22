@@ -107,7 +107,7 @@ print("\n<<<<<<<<<<<  Set Symmetric Difference >>>>>>>>>>>>>")
 # use ^ operator or symmetric_difference() function
 print(A ^ B)
 print(A.symmetric_difference(B))
-
+# [1, 2, 3] [3, 4, 5] -> [1, 5]
 print("\n<<<<<<<<<<<  Iterating Through a Set >>>>>>>>>>>>>")
 for letter in set("apple"):
     print(letter)
